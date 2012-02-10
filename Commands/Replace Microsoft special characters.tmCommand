@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>beforeRunningCommand</key>
+  <string>nop</string>
+  <key>command</key>
+  <string>#!/usr/bin/env ruby -wKU
+output = STDIN.read
+output.gsub!(/[”“„]/,'"')
+output.gsub!(/[’‘‚]/,"'")
+output.gsub!(/[–—]/,'-')
+output.gsub!(/…/,'...')
+output.gsub!(/ˆ/, '^')
+output.gsub!(/‹/, '<')
+output.gsub!(/›/, '>')
+output.gsub!(/˜ /, ' ')
+
+print output</string>
+  <key>input</key>
+  <string>document</string>
+  <key>keyEquivalent</key>
+  <string>@d</string>
+  <key>name</key>
+  <string>Replace Microsoft special characters</string>
+  <key>output</key>
+  <string>replaceDocument</string>
+  <key>uuid</key>
+  <string>56758549-60AF-46F5-B3D3-3A0A69950983</string>
+</dict>
+</plist>
