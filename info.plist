@@ -2,9 +2,9 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>name</key>
-	<string>SmartQuotes</string>
-	<key>uuid</key>
-	<string>6AEABD0E-F7AE-4778-A58C-753922B520A3</string>
+  <key>name</key>
+  <string>sanitizer</string>
+  <key>uuid</key>
+  <string>6AEABD0E-F7AE-4778-A58C-753922B520A3</string>
 </dict>
 </plist>
